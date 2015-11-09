@@ -30,9 +30,9 @@ function runPH() {
 		
 		//Create Settings Checkboxes and Load Data
 		createSettingsCheckbox("WMEPH-EnableServices","Enable Automatic Addition of Services");
-		createSettingsCheckbox("WMEPH-ConvenienceStoreToGasStations","Add the Convenience Store Category to Gas Stations");
-		createSettingsCheckbox("WMEPH-PreserveLongURLs","Preserve Long URLs for Harmonized Places");
-		createSettingsCheckbox("WMEPH-StripWWW","Strip WWW from URLs");
+		//createSettingsCheckbox("WMEPH-ConvenienceStoreToGasStations","Add the Convenience Store Category to Gas Stations");
+		//createSettingsCheckbox("WMEPH-PreserveLongURLs","Preserve Long URLs for Harmonized Places");
+		//createSettingsCheckbox("WMEPH-StripWWW","Strip WWW from URLs");
 	}
 
 	// -----------------------------------------------------------------------------------------------
@@ -2934,11 +2934,11 @@ function runPH() {
             }
 			servMatch = servMatchTemp;
 			// turn off service updating
-			servMatch = true;
-			if (W.loginManager.user.userName === "ct13") {servMatch = true};
-			if (W.loginManager.user.userName === "bmtg") {servMatch = servMatchTemp};
-			
-			if (!item.attributes.residential && !servMatch) {
+			//servMatch = true;
+			//if (W.loginManager.user.userName === "ct13") {servMatch = true};
+			//if (W.loginManager.user.userName === "bmtg") {servMatch = servMatchTemp};
+		
+			if (!item.attributes.residential && !servMatch && $("#WMEPH-EnableServices").prop('checked')) {
 				console.log("WMEPH: Services updated");
                 W.model.actionManager.add(new UpdateObject(item, { services: tempServ }));
 			} else if (item.attributes.residential) {
