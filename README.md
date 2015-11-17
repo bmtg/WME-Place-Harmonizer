@@ -61,17 +61,17 @@ Current features:
 
 * Place name Title casing: 
 
-1. If there are any lower case letters in any word, then it will Title Case that word. Example:  john's Pass BakERY -> John's Pass Bakery
+  1. If there are any lower case letters in any word, then it will Title Case that word. Example:  john's Pass BakERY -> John's Pass Bakery
 
-2. If there is an ALL CAPS word ALONG with other words that are not in all caps, then the ALL CAPS word will be left ALL CAPS while the others are title cased.  Examples:  ALCCO store -> ALCCO Store; QVN Pharmacy -> QVN Pharmacy
+  2. If there is an ALL CAPS word ALONG with other words that are not in all caps, then the ALL CAPS word will be left ALL CAPS while the others are title cased.  Examples:  ALCCO store -> ALCCO Store; QVN Pharmacy -> QVN Pharmacy
 
-3. If the _entire_ place name is in ALL CAPS, then the script will change the entire name to Title Case.  Examples:  ALLCO -> Allco; JOHN'S PASS BAKERY -> John's Pass Bakery.
+  3. If the _entire_ place name is in ALL CAPS, then the script will change the entire name to Title Case.  Examples:  ALLCO -> Allco; JOHN'S PASS BAKERY -> John's Pass Bakery.
 
-4.  Some common articles and prepositions are kept lowercase.  (a, an, the, of, for, and so forth)
+  4.  Some common articles and prepositions are kept lowercase.  (a, an, the, of, for, and so forth)
 
-5. Some common ALL CAPS words are made/kept all caps (USA, IRS, BMW)
+  5. Some common ALL CAPS words are made/kept all caps (USA, IRS, BMW)
 
-6. Chain name harmonization overrides title case processing.  
+  6. Chain name harmonization overrides title case processing.  
 
 > As you can see, some single word ALL CAPS place names might be correct as ALL CAPS.  Additionally, some places have internal caps, like CollegeUSA.  Unless they are in the chain list, they will be Title cased.  Please observe the name as you use the script and correct as necessary.  
 
