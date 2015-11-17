@@ -27,13 +27,13 @@ Select a place in WME, and press the shortcut key (Alt-A).  Verify changes, adju
 Examples (before and after using the script):
 ---------------------------------------------
 
-Automatic correction of a McDonald's:
+* Automatic correction of a McDonald's:
 http://prntscr.com/8y1ic1
 
-Automatic correction of a 7-Eleven:
+* Automatic correction of a 7-Eleven:
 http://prntscr.com/8y1gk0
 
-A place with no harmonization data (standalone restaurant):
+* A place with no harmonization data (standalone restaurant):
 http://prntscr.com/8y1js4
 
 -------------
