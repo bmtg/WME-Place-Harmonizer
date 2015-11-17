@@ -39,6 +39,7 @@ http://prntscr.com/8y1js4
 -------------
 
 Current features:
+-----------------
 
 * Regional Localization: Script will automatically detect the region of the selected place:  Currently SE, SAT, or Undefined.  If it's in SE or SAT, regional locking rules, place formats, and Phone# formats are applied.  For other regions, these are kept to the basic locking at 3 and (xxx) phone format (until other regions' rules are brought in, in the future).  **Note that for some app-submitted places, no state name is stored.  In these cases, you have to enter at least a city and street in the address field for the script to run.
 
@@ -50,15 +51,15 @@ Current features:
 
 * Gas station correction: This script will do the following to places that have the gas station category:
 
-1) If the primary name doesn't match the brand, then the primary name is moved to the alt name, and the brand is set as the primary name.  Example:  A place named CIRCLE K that has a brand of Shell, will be changed so that Shell is the Primary name, and Circle K is the alt name.  If there is no brand, then there is no change to the name.  The brand field is never changed by this script; if a station has changed brands, that edit needs to be done manually, after which the script can be run.  If the name is changed, the script will alert the user to check the info before saving.
+    . If the primary name doesn't match the brand, then the primary name is moved to the alt name, and the brand is set as the primary name.  Example:  A place named CIRCLE K that has a brand of Shell, will be changed so that Shell is the Primary name, and Circle K is the alt name.  If there is no brand, then there is no change to the name.  The brand field is never changed by this script; if a station has changed brands, that edit needs to be done manually, after which the script can be run.  If the name is changed, the script will alert the user to check the info before saving.
 
-2) The category "Convenience Store" is added to the place.  Very few stations do not have a convenience store, so this adds a likely category.  If your station doesn't have a convenience store, then simply X out the convenience store category after running the script.  If the station had the categories of ATM or Car Wash already in the place, this will preserve them.  Any other categories are wiped out.
+    . The category "Convenience Store" is added to the place.  Very few stations do not have a convenience store, so this adds a likely category.  If your station doesn't have a convenience store, then simply X out the convenience store category after running the script.  If the station had the categories of ATM or Car Wash already in the place, this will preserve them.  Any other categories are wiped out.
 
-3) Services check boxes are set automatically to : Restrooms, Credit Cards, Air Conditioning, Parking, and Wheelchair Accessible.
+    . Services check boxes are set automatically to : Restrooms, Credit Cards, Air Conditioning, Parking, and Wheelchair Accessible.
 
-4) Special stations that are subsets of a larger store are treated slightly differently; At present the script handles Costco, BJ's and Sam's Club stations so that the primary name has "Gasoline" after the name.  Rules 1, 2, and 3 just above are not applied to these places, and also the text "Members only" is added to the description.  Services are limited to Credit Cards, Parking, and Wheelchair Accessible.
+    . Special stations that are subsets of a larger store are treated slightly differently; At present the script handles Costco, BJ's and Sam's Club stations so that the primary name has "Gasoline" after the name.  Rules 1, 2, and 3 just above are not applied to these places, and also the text "Members only" is added to the description.  Services are limited to Credit Cards, Parking, and Wheelchair Accessible.
 
--- Place name Title casing: 
+* Place name Title casing: 
 
 1) If there are any lower case letters in any word, then it will Title Case that word. Example:  john's Pass BakERY -> John's Pass Bakery
 
