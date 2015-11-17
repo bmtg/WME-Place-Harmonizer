@@ -1,26 +1,31 @@
-Place Harmonizer documentation;  
+Place Harmonizer
+===============
 developed by bmtg, vtpearce;  
 comments for this version to: bmtg (PM), bmtg_4 (Slack DM)
 
 Description:
+------------
 
 This script acts on a single selected place.  It will generally clean up many place details, harmonize names and details of many chains, and, if the place is complete according to standards, it will lock to an appropriate level.  Full feature list is below.
 
 ----------------
 
 Installation:
+-------------
 
 Use tampermonkey / greasemonkey
 
 -------------
 
 Usage:
+------
 
 Select a place in WME, and press the shortcut key (Alt-A).  Verify changes, adjust as needed, save.
 
 -------------
 
 Examples (before and after using the script):
+---------------------------------------------
 
 Automatic correction of a McDonald's:
 http://prntscr.com/8y1ic1
