@@ -73,7 +73,7 @@ Current features:
 
   6. Chain name harmonization overrides title case processing.  
 
-> As you can see, some single word ALL CAPS place names might be correct as ALL CAPS.  Additionally, some places have internal caps, like CollegeUSA.  Unless they are in the chain list, they will be Title cased.  Please observe the name as you use the script and correct as necessary.  
+    > As you can see, some single word ALL CAPS place names might be correct as ALL CAPS.  Additionally, some places have internal caps, like CollegeUSA.  Unless they are in the chain list, they will be Title cased.  Please observe the name as you use the script and correct as necessary.  
 
 * Phone correction: If the phone field contains 10 digits, and the digits are not in either xxx-xxx-xxxx or (xxx) xxx-xxxx formats, then the script will put the digits into xxx-xxx-xxxx format.  Those phone numbers that are already in either correct format are not altered.  A leading 1 will be stripped.
 
@@ -90,7 +90,7 @@ Script will check for area vs. point according to wiki guidance (including SE de
 
   4. Places with weird HNs are flagged for manual check and lock (8133455678, 123A, 31-2)
 
-> Note: the name and address checks look to see that the info is there, but they don't say if it's correct (i.e., a wrong HN can't be detected by a script like this).  The Harmonization part of the script can autocorrect some misspellings for chains but the editor needs to make sure that the name and address are the correct ones for the place.
+    > Note: the name and address checks look to see that the info is there, but they don't say if it's correct (i.e., a wrong HN can't be detected by a script like this).  The Harmonization part of the script can autocorrect some misspellings for chains but the editor needs to make sure that the name and address are the correct ones for the place.
 
 * Applying a lock: If a place satisfies the 3 checks above, then the script will lock the place at the correct level.  The level is determined from the SE locking guidelines.  For example, hospitals are locked at 5, restaurants at 3.  Places in the College Campus Project are locked according to those standards as much as possible.  Notes: If your editor rank is lower than the lock required, then the script locks it to your rank.  Also, the script will never down-lock a place.  Please recognize that not all cases can be scripted.  For example, park-and-ride lots are not easy to distinguish from regular parking lots in a script, so they are locked to 3 in this case.  So use your judgement.  This is just an (imperfect but hopefully useful) tool!
 
