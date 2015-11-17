@@ -55,9 +55,9 @@ Current features:
 
     . The category "Convenience Store" is added to the place.  Very few stations do not have a convenience store, so this adds a likely category.  If your station doesn't have a convenience store, then simply X out the convenience store category after running the script.  If the station had the categories of ATM or Car Wash already in the place, this will preserve them.  Any other categories are wiped out.
 
-    . Services check boxes are set automatically to : Restrooms, Credit Cards, Air Conditioning, Parking, and Wheelchair Accessible.
+     1. Services check boxes are set automatically to : Restrooms, Credit Cards, Air Conditioning, Parking, and Wheelchair Accessible.
 
-    . Special stations that are subsets of a larger store are treated slightly differently; At present the script handles Costco, BJ's and Sam's Club stations so that the primary name has "Gasoline" after the name.  Rules 1, 2, and 3 just above are not applied to these places, and also the text "Members only" is added to the description.  Services are limited to Credit Cards, Parking, and Wheelchair Accessible.
+     2. Special stations that are subsets of a larger store are treated slightly differently; At present the script handles Costco, BJ's and Sam's Club stations so that the primary name has "Gasoline" after the name.  Rules 1, 2, and 3 just above are not applied to these places, and also the text "Members only" is added to the description.  Services are limited to Credit Cards, Parking, and Wheelchair Accessible.
 
 * Place name Title casing: 
 
