@@ -40,15 +40,15 @@ http://prntscr.com/8y1js4
 
 Current features:
 
--- Regional Localization: Script will automatically detect the region of the selected place:  Currently SE, SAT, or Undefined.  If it's in SE or SAT, regional locking rules, place formats, and Phone# formats are applied.  For other regions, these are kept to the basic locking at 3 and (xxx) phone format (until other regions' rules are brought in, in the future).  **Note that for some app-submitted places, no state name is stored.  In these cases, you have to enter at least a city and street in the address field for the script to run.
+* Regional Localization: Script will automatically detect the region of the selected place:  Currently SE, SAT, or Undefined.  If it's in SE or SAT, regional locking rules, place formats, and Phone# formats are applied.  For other regions, these are kept to the basic locking at 3 and (xxx) phone format (until other regions' rules are brought in, in the future).  **Note that for some app-submitted places, no state name is stored.  In these cases, you have to enter at least a city and street in the address field for the script to run.
 
--- Country Localization: Script only works in the USA, but can be expanded to other countries in the future.
+* Country Localization: Script only works in the USA, but can be expanded to other countries in the future.
 
--- Place name harmonization: An ongoing project is to harmonize place names for chains.  This mostly involves having the same primary name, alt-name(s), category(s), and website address for every place from that chain.  This script will harmonize the current place based on the detected place name and the place harmonization sheet, for many chains on the sheet (more places added with each new update).  When using the script, if the script finds a match for a place on the harm. sheet, it will auto correct the name to the standard name, add any alt-names if needed, put in the correct category(s), and put in the standardized url for the chain.
+* Place name harmonization: An ongoing project is to harmonize place names for chains.  This mostly involves having the same primary name, alt-name(s), category(s), and website address for every place from that chain.  This script will harmonize the current place based on the detected place name and the place harmonization sheet, for many chains on the sheet (more places added with each new update).  When using the script, if the script finds a match for a place on the harm. sheet, it will auto correct the name to the standard name, add any alt-names if needed, put in the correct category(s), and put in the standardized url for the chain.
 
--- Common services are added for several categories.  For example, Schools receive Restroom, Parking, AC, Wheelchair services.  Any existing checked services are preserved.
+* Common services are added for several categories.  For example, Schools receive Restroom, Parking, AC, Wheelchair services.  Any existing checked services are preserved.
 
--- Gas station correction: This script will do the following to places that have the gas station category:
+* Gas station correction: This script will do the following to places that have the gas station category:
 
 1) If the primary name doesn't match the brand, then the primary name is moved to the alt name, and the brand is set as the primary name.  Example:  A place named CIRCLE K that has a brand of Shell, will be changed so that Shell is the Primary name, and Circle K is the alt name.  If there is no brand, then there is no change to the name.  The brand field is never changed by this script; if a station has changed brands, that edit needs to be done manually, after which the script can be run.  If the name is changed, the script will alert the user to check the info before saving.
 
